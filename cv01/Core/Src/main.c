@@ -97,10 +97,18 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	  LL_GPIO_SetOutputPin(LD2_GPIO_Port, LD2_Pin);
-	  LL_mDelay(100);
-	  LL_GPIO_ResetOutputPin(LD2_GPIO_Port, LD2_Pin);
-	  LL_mDelay(100);
+	  const uint8_t array[] = {1,0,1,0,1,0,0,1,1,1,0,1,1,1,0,1,1,1,0,0,1,0,1,0,1,0,0,0,0,0,0,0};
+
+	  for(uint8_t i = 0; i<sizeof(array); i++){
+		  if(array[i] == 0){
+			  LL_GPIO_ResetOutputPin(LD2_GPIO_Port, LD2_Pin);
+
+		  }else{
+			  LL_GPIO_SetOutputPin(LD2_GPIO_Port, LD2_Pin);
+		  }
+		  LL_mDelay(200);
+	  }
+
 
     /* USER CODE END WHILE */
 
