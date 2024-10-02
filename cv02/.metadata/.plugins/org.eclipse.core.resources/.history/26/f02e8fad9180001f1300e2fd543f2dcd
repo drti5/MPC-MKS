@@ -69,7 +69,6 @@ void blink(void) {
 
 void button(void) {
 	static uint32_t old_s2;
-	static uint32_t old_s1;
 	static uint32_t delay;
 	static uint32_t off_time;
 
