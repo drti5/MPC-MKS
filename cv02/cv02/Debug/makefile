@@ -60,8 +60,8 @@ all: main-build
 main-build: cv02.elf secondary-outputs
 
 # Tool invocations
-cv02.elf cv02.map: $(OBJS) $(USER_OBJS) C:\Temp\240605\MKS\MPC-MKS\cv02\cv02\STM32F030R8TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "cv02.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0 -T"C:\Temp\240605\MKS\MPC-MKS\cv02\cv02\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cv02.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+cv02.elf cv02.map: $(OBJS) $(USER_OBJS) C:\Users\240605\Documents\ghgh\MPC-MKS\MPC-MKS\cv02\cv02\STM32F030R8TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "cv02.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0 -T"C:\Users\240605\Documents\ghgh\MPC-MKS\MPC-MKS\cv02\cv02\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cv02.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

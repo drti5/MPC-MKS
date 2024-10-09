@@ -39,13 +39,13 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING, OCTETS
  17 .debug_line   00003d6a  00000000  00000000  0001154d  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_str    000343b0  00000000  00000000  000152b7  2**0
+ 18 .debug_str    000343c4  00000000  00000000  000152b7  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .comment      00000043  00000000  00000000  00049667  2**0
+ 19 .comment      00000043  00000000  00000000  0004967b  2**0
                   CONTENTS, READONLY
- 20 .debug_frame  00001044  00000000  00000000  000496ac  2**2
+ 20 .debug_frame  00001044  00000000  00000000  000496c0  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 21 .debug_line_str 00000053  00000000  00000000  0004a6f0  2**0
+ 21 .debug_line_str 00000067  00000000  00000000  0004a704  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
@@ -1141,10 +1141,10 @@ void button(void) {
  80006d8:	4b27      	ldr	r3, [pc, #156]	@ (8000778 <button+0xe8>)
  80006da:	687a      	ldr	r2, [r7, #4]
  80006dc:	601a      	str	r2, [r3, #0]
-//					off_time = Tick + LED_TIME_LONG;
-//					LL_GPIO_SetOutputPin(LED2_GPIO_Port, LED2_Pin);
-//				}
-//				old_s1 = new_s1;
+		//					off_time = Tick + LED_TIME_LONG;
+		//					LL_GPIO_SetOutputPin(LED2_GPIO_Port, LED2_Pin);
+		//				}
+		//				old_s1 = new_s1;
 
 		delay = Tick;
  80006de:	4b24      	ldr	r3, [pc, #144]	@ (8000770 <button+0xe0>)
@@ -1176,7 +1176,7 @@ void button(void) {
  8000708:	b29a      	uxth	r2, r3
  800070a:	4b1f      	ldr	r3, [pc, #124]	@ (8000788 <button+0xf8>)
  800070c:	801a      	strh	r2, [r3, #0]
-		if(s1){
+		if (s1) {
  800070e:	683b      	ldr	r3, [r7, #0]
  8000710:	2b00      	cmp	r3, #0
  8000712:	d006      	beq.n	8000722 <button+0x92>
@@ -1215,9 +1215,7 @@ void button(void) {
  8000746:	681a      	ldr	r2, [r3, #0]
  8000748:	4b0e      	ldr	r3, [pc, #56]	@ (8000784 <button+0xf4>)
  800074a:	601a      	str	r2, [r3, #0]
-
 	}
-
 
 	if (Tick > off_time) {
  800074c:	4b08      	ldr	r3, [pc, #32]	@ (8000770 <button+0xe0>)
@@ -1226,12 +1224,12 @@ void button(void) {
  8000752:	681b      	ldr	r3, [r3, #0]
  8000754:	429a      	cmp	r2, r3
  8000756:	d904      	bls.n	8000762 <button+0xd2>
-			LL_GPIO_ResetOutputPin(LED2_GPIO_Port, LED2_Pin);
+		LL_GPIO_ResetOutputPin(LED2_GPIO_Port, LED2_Pin);
  8000758:	4b09      	ldr	r3, [pc, #36]	@ (8000780 <button+0xf0>)
  800075a:	2101      	movs	r1, #1
  800075c:	0018      	movs	r0, r3
  800075e:	f7ff ff57 	bl	8000610 <LL_GPIO_ResetOutputPin>
-		}
+	}
 }
  8000762:	46c0      	nop			@ (mov r8, r8)
  8000764:	46bd      	mov	sp, r7
