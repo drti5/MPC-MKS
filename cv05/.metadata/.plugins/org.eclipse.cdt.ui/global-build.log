@@ -1,0 +1,140 @@
+10:29:43 **** Incremental Build of configuration Debug for project cv05 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cv05.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\240605\Documents\ghgh\MPC-MKS\MPC-MKS\cv05\cv05\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cv05.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cv05.elf
+ 
+arm-none-eabi-size  cv05.elf 
+arm-none-eabi-objdump -h -S cv05.elf  > "cv05.list"
+   text	   data	    bss	    dec	    hex	filename
+  21156	    104	   2520	  23780	   5ce4	cv05.elf
+Finished building: default.size.stdout
+ 
+Finished building: cv05.list
+ 
+10:29:46 **** Incremental Build of configuration Debug for project cv05 ****
+make -j4 all 
+arm-none-eabi-size  cv05.elf 
+   text	   data	    bss	    dec	    hex	filename
+  21156	    104	   2520	  23780	   5ce4	cv05.elf
+Finished building: default.size.stdout
+ 
+10:31:55 **** Incremental Build of configuration Debug for project cv05 ****
+make -j4 all 
+arm-none-eabi-size  cv05.elf 
+   text	   data	    bss	    dec	    hex	filename
+  21156	    104	   2520	  23780	   5ce4	cv05.elf
+Finished building: default.size.stdout
+ 
+10:34:11 **** Incremental Build of configuration Debug for project cv05 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cv05.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\240605\Documents\ghgh\MPC-MKS\MPC-MKS\cv05\cv05\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cv05.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cv05.elf
+ 
+arm-none-eabi-size  cv05.elf 
+arm-none-eabi-objdump -h -S cv05.elf  > "cv05.list"
+   text	   data	    bss	    dec	    hex	filename
+  21156	    104	   2520	  23780	   5ce4	cv05.elf
+Finished building: default.size.stdout
+ 
+Finished building: cv05.list
+ 
+10:36:05 **** Incremental Build of configuration Debug for project cv05 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cv05.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\240605\Documents\ghgh\MPC-MKS\MPC-MKS\cv05\cv05\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cv05.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cv05.elf
+ 
+arm-none-eabi-size  cv05.elf 
+arm-none-eabi-objdump -h -S cv05.elf  > "cv05.list"
+   text	   data	    bss	    dec	    hex	filename
+  21160	    104	   2520	  23784	   5ce8	cv05.elf
+Finished building: default.size.stdout
+ 
+Finished building: cv05.list
+ 
+10:38:03 **** Incremental Build of configuration Debug for project cv05 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cv05.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\240605\Documents\ghgh\MPC-MKS\MPC-MKS\cv05\cv05\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cv05.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cv05.elf
+ 
+arm-none-eabi-size  cv05.elf 
+arm-none-eabi-objdump -h -S cv05.elf  > "cv05.list"
+   text	   data	    bss	    dec	    hex	filename
+  21160	    104	   2520	  23784	   5ce8	cv05.elf
+Finished building: default.size.stdout
+ 
+Finished building: cv05.list
+ 
+10:39:34 **** Incremental Build of configuration Debug for project cv05 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cv05.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\240605\Documents\ghgh\MPC-MKS\MPC-MKS\cv05\cv05\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cv05.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cv05.elf
+ 
+arm-none-eabi-size  cv05.elf 
+arm-none-eabi-objdump -h -S cv05.elf  > "cv05.list"
+   text	   data	    bss	    dec	    hex	filename
+  21152	    104	   2520	  23776	   5ce0	cv05.elf
+Finished building: default.size.stdout
+ 
+Finished building: cv05.list
+ 
+10:40:24 **** Incremental Build of configuration Debug for project cv05 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cv05.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\240605\Documents\ghgh\MPC-MKS\MPC-MKS\cv05\cv05\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cv05.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cv05.elf
+ 
+arm-none-eabi-size  cv05.elf 
+arm-none-eabi-objdump -h -S cv05.elf  > "cv05.list"
+   text	   data	    bss	    dec	    hex	filename
+  21144	    104	   2520	  23768	   5cd8	cv05.elf
+Finished building: default.size.stdout
+ 
+Finished building: cv05.list
+ 
+10:40:50 **** Incremental Build of configuration Debug for project cv05 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cv05.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\240605\Documents\ghgh\MPC-MKS\MPC-MKS\cv05\cv05\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cv05.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cv05.elf
+ 
+arm-none-eabi-size  cv05.elf 
+arm-none-eabi-objdump -h -S cv05.elf  > "cv05.list"
+   text	   data	    bss	    dec	    hex	filename
+  21148	    104	   2520	  23772	   5cdc	cv05.elf
+Finished building: default.size.stdout
+ 
+Finished building: cv05.list
+ 
+10:41:26 **** Incremental Build of configuration Debug for project cv05 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cv05.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\240605\Documents\ghgh\MPC-MKS\MPC-MKS\cv05\cv05\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cv05.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cv05.elf
+ 
+arm-none-eabi-size  cv05.elf 
+arm-none-eabi-objdump -h -S cv05.elf  > "cv05.list"
+   text	   data	    bss	    dec	    hex	filename
+  21280	    104	   2520	  23904	   5d60	cv05.elf
+Finished building: default.size.stdout
+ 
+Finished building: cv05.list
+ 
+10:41:57 **** Incremental Build of configuration Debug for project cv05 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cv05.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\240605\Documents\ghgh\MPC-MKS\MPC-MKS\cv05\cv05\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cv05.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cv05.elf
+ 
+arm-none-eabi-size  cv05.elf 
+arm-none-eabi-objdump -h -S cv05.elf  > "cv05.list"
+   text	   data	    bss	    dec	    hex	filename
+  21280	    104	   2520	  23904	   5d60	cv05.elf
+Finished building: default.size.stdout
+ 
+Finished building: cv05.list
+ 

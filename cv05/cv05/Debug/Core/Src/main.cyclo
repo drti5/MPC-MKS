@@ -1,0 +1,10 @@
+../Core/Src/main.c:71:5:_write	1
+../Core/Src/main.c:77:13:uart_process_command	16
+../Core/Src/main.c:155:13:uart_byte_available	7
+../Core/Src/main.c:172:5:main	3
+../Core/Src/main.c:228:6:SystemClock_Config	4
+../Core/Src/main.c:270:13:MX_I2C1_Init	4
+../Core/Src/main.c:315:13:MX_USART2_UART_Init	2
+../Core/Src/main.c:346:13:MX_DMA_Init	1
+../Core/Src/main.c:363:13:MX_GPIO_Init	1
+../Core/Src/main.c:412:6:Error_Handler	1
